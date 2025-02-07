@@ -50,7 +50,6 @@ services:
       S3_PORT: "${S3_PORT}"
       S3_BUCKET: "${S3_BUCKET}"
       S3_SSL: "${S3_SSL}"
-      S3_PUBLIC_CUSTOM_DOMAIN: "${S3_PUBLIC_CUSTOM_DOMAIN}"
     ports:
       - "${BUILDER_PORT:-8083}:3000"
     extra_hosts:
@@ -87,6 +86,5 @@ services:
       S3_PORT: "${S3_PORT}"
       S3_BUCKET: "${S3_BUCKET}"
       S3_SSL: "${S3_SSL}"
-      S3_PUBLIC_CUSTOM_DOMAIN: "${S3_PUBLIC_CUSTOM_DOMAIN}"
     ports:
       - "${VIEWER_PORT:-8084}:3000"

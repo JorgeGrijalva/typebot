@@ -31,16 +31,16 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
       
-  typebot-landing-page:
-    build:
-      context: .
-      args:
-        - SCOPE=landing-page
-    restart: always
-    environment:
-      LANDING_PAGE_URL: "${LANDING_PAGE_URL}"
-    ports:
-      - "8085:3000"
+  # typebot-landing-page:
+  #   build:
+  #     context: .
+  #     args:
+  #       - SCOPE=landing-page
+  #   restart: always
+  #   environment:
+  #     LANDING_PAGE_URL: "${LANDING_PAGE_URL}"
+  #   ports:
+  #     - "8085:3000"
 
   typebot-viewer:
     build:

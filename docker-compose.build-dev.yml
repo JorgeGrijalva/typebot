@@ -1,33 +1,9 @@
-volumes:
-  db-data:
-
 services:
-  typebot-db:
-    image: postgres:16
-    restart: always
-    volumes:
-      - db-data:/var/lib/postgresql/data
-    environment:
-      POSTGRES_USER: typebot
-      POSTGRES_DB: typebot
-      POSTGRES_PASSWORD: typebot
-    networks:
-      - dokploy-network
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
-      interval: 5s
-      timeout: 5s
-      retries: 5
-
   typebot-builder:
     build:
       context: .
       args:
         - SCOPE=builder
-    depends_on:
-      typebot-db:
-        condition: service_healthy
-    restart: always
     environment:
       ENCRYPTION_SECRET: "${ENCRYPTION_SECRET}"
       DATABASE_URL: "${DATABASE_URL}"
@@ -54,16 +30,23 @@ services:
       - "${BUILDER_PORT:-8083}:3000"
     extra_hosts:
       - "host.docker.internal:host-gateway"
+      
+  typebot-landing-page:
+    build:
+      context: .
+      args:
+        - SCOPE=landing-page
+    restart: always
+    environment:
+      LANDING_PAGE_URL: "${LANDING_PAGE_URL}"
+    ports:
+      - "8085:3000"
 
   typebot-viewer:
     build:
       context: .
       args:
         - SCOPE=viewer
-    depends_on:
-      typebot-db:
-        condition: service_healthy
-    restart: always
     environment:
       ENCRYPTION_SECRET: "${ENCRYPTION_SECRET}"
       DATABASE_URL: "${DATABASE_URL}"

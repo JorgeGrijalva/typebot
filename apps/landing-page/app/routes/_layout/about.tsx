@@ -1,5 +1,5 @@
 import { ContentPageWrapper } from "@/components/ContentPageWrapper";
-import { WhyNorobotCta } from "@/components/cta/WhyNorobotCta";
+import { WhyNorobotCta } from "@/components/cta/WhyTypebotCta";
 import { BuildingsGradientIcon } from "@/features/about/BuildingsGradientIcon";
 import { HeartGradientIcon } from "@/features/about/HeartGradientIcon";
 import { MessageSquareGradientIcon } from "@/features/about/MessageSquareGradientIcon";

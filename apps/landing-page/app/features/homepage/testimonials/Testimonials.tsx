@@ -1,4 +1,5 @@
-import { NorobotLogo } from "@/components/NorobotLogo";
+import { Link } from "@tanstack/react-router";
+import ImageLogo from "../../../assets/logo.png";
 import abhayPictureSrc from "./assets/abhay.jpeg";
 import annaFilouPictureSrc from "./assets/annaFilou.jpeg";
 import invictuzPictureSrc from "./assets/invictuz.png";
@@ -235,7 +236,10 @@ const Testimonial = ({
           />
         ) : (
           <div className="dark rounded-full size-full flex items-center justify-center p-3">
-            <NorobotLogo />
+            <Link to="/" className="flex items-center space-x-1">
+              <img src={ImageLogo} alt="Logo" className="h-8" />
+              <p className="font-semibold">Norobot</p>
+            </Link>
           </div>
         )}
       </div>

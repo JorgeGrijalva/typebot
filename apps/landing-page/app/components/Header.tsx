@@ -18,6 +18,7 @@ import clsx from "clsx";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import React from "react";
+import ImageLogo from "../assets/logo.png";
 import { NorobotBubble } from "./TypebotBubble";
 import { ButtonLink, TextLink } from "./link";
 
@@ -155,8 +156,9 @@ const Mobile = React.forwardRef<HTMLElement, Props>(function Mobile(
       animate={{ height: isOpened ? "calc(100dvh - 2rem)" : "auto" }}
     >
       <div className="flex items-center justify-between px-4 py-2">
-        <Link to="/">
-          <NorobotLogoFull />
+        <Link to="/" className="flex items-center space-x-1">
+          <img src={ImageLogo} alt="Logo" className="h-8" />
+          <p className="font-semibold">Norobot</p>
         </Link>
         <IconButton
           aria-label={isOpened ? "Close menu" : "Open menu"}

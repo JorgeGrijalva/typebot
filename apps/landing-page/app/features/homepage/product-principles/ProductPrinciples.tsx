@@ -10,27 +10,27 @@ const data = [
   {
     title: "Effortless building experience",
     content:
-      "Typebot makes it easy to build conversational interfaces with lots of customization options. Our flexible, scalable solution uses adaptable building blocks that fit any business need. Each block comes with great default settings but every little details can be configured to match your requirements.",
+      "Norobot makes it easy to build conversational interfaces with lots of customization options. Our flexible, scalable solution uses adaptable building blocks that fit any business need. Each block comes with great default settings but every little details can be configured to match your requirements.",
   },
   {
     title: "Extensive chat capabilities",
     content:
-      "Typebot goes beyond customer support, offering versatile chat flows perfect for quizzes, surveys, creative marketing, and more. It's ideal for lead generation, internal communications, and diverse departmental needs, making it a valuable tool across your organization.",
+      "Norobot goes beyond customer support, offering versatile chat flows perfect for quizzes, surveys, creative marketing, and more. It's ideal for lead generation, internal communications, and diverse departmental needs, making it a valuable tool across your organization.",
   },
   {
     title: "Designed for human delight",
     content:
-      "Experience first-class UX and beautiful interfaces with Typebot. Our easy-to-use visual flow editor helps you create engaging and lively conversations, making interactions with the tool smooth and enjoyable.",
+      "Experience first-class UX and beautiful interfaces with Norobot. Our easy-to-use visual flow editor helps you create engaging and lively conversations, making interactions with the tool smooth and enjoyable.",
   },
   {
     title: "Made with love for developers ",
     content:
-      "Typebot is 100% open source, built with a passion for empowering developers. Our active community shares bots and features, contributing to a rich ecosystem of innovation and collaboration. Join us in shaping the future of conversational tools.",
+      "Norobot is 100% open source, built with a passion for empowering developers. Our active community shares bots and features, contributing to a rich ecosystem of innovation and collaboration. Join us in shaping the future of conversational tools.",
   },
   {
     title: "Continuously evolving technology",
     content:
-      "Typebot's technology is constantly evolving, with regular updates that include bug fixes, new features, and performance enhancements. We ensure that our platform stays up-to-date and reliable, providing you with the latest advancements and the best experience.",
+      "Norobot's technology is constantly evolving, with regular updates that include bug fixes, new features, and performance enhancements. We ensure that our platform stays up-to-date and reliable, providing you with the latest advancements and the best experience.",
   },
 ];
 

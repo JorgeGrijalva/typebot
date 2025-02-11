@@ -13,7 +13,7 @@ const data = [
       "What are the pricing plans, and what features are included in the free plan?",
     content: (
       <>
-        Typebot offers flexible pricing plans to suit solo business owners,
+        Norobot offers flexible pricing plans to suit solo business owners,
         startups, and large companies. The{" "}
         <span className="font-bold">Free</span> plan includes unlimited
         typebots, 200 chats per month, native integrations, webhooks, custom
@@ -25,12 +25,12 @@ const data = [
   },
   {
     title:
-      "How easy is it to integrate Typebot with my existing systems and platforms?",
+      "How easy is it to integrate Norobot with my existing systems and platforms?",
     content: (
       <>
-        Integrating Typebot with your existing systems and platforms is
+        Integrating Norobot with your existing systems and platforms is
         straightforward. We provide clear, step-by-step instructions to guide
-        you through the process. Typebot supports a wide range of platforms,
+        you through the process. Norobot supports a wide range of platforms,
         including WhatsApp, WordPress, Shopify, FlutterFlow, React, Next.js,
         Notion, Webflow, Framer, and many more.
       </>
@@ -38,12 +38,12 @@ const data = [
   },
   {
     title:
-      "What kind of AI and machine learning capabilities does Typebot offer?",
+      "What kind of AI and machine learning capabilities does Norobot offer?",
     content: (
       <>
-        Typebot is AI provider agnostic, giving you the flexibility to connect
+        Norobot is AI provider agnostic, giving you the flexibility to connect
         with any AI provider of your choice. Unlike competitors that lock you
-        into proprietary systems, Typebot provides the building blocks to
+        into proprietary systems, Norobot provides the building blocks to
         integrate seamlessly with your preferred AI services. You maintain full
         control over the data you inject into the AI and the associated costs.
       </>
@@ -54,7 +54,7 @@ const data = [
       "What kind of support and resources are available if I encounter issues or need help?",
     content: (
       <>
-        If you encounter any issues or need assistance, Typebot offers several
+        If you encounter any issues or need assistance, Norobot offers several
         support and resource options:
         <ol className="list-decimal list-inside flex flex-col gap-6 py-6">
           <li>
@@ -85,7 +85,7 @@ const data = [
     ),
   },
   {
-    title: "How secure is Typebot, and how do you handle data privacy?",
+    title: "How secure is Norobot, and how do you handle data privacy?",
     content: (
       <p>
         Our guiding principle is to collect only what we need to provide the

@@ -4,7 +4,7 @@ export const Bubble = lazy(() =>
   import("@typebot.io/react").then((m) => ({ default: m.Bubble })),
 );
 
-export const TypebotBubble = () => (
+export const NorobotBubble = () => (
   <Suspense fallback={<div className="size-12" />}>
     <Bubble
       typebot="typebot-demo"

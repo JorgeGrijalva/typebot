@@ -1,6 +1,6 @@
 import { buttonVariants } from "@/components/Button";
 import { IconButton } from "@/components/IconButton";
-import { TypebotLogoFull } from "@/components/TypebotLogo";
+import { NorobotLogoFull } from "@/components/TypebotLogo";
 import {
   breakpoints,
   discordUrl,
@@ -18,7 +18,7 @@ import clsx from "clsx";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import React from "react";
-import { TypebotBubble } from "./TypebotBubble";
+import { NorobotBubble } from "./TypebotBubble";
 import { ButtonLink, TextLink } from "./link";
 
 const links = [
@@ -156,7 +156,7 @@ const Mobile = React.forwardRef<HTMLElement, Props>(function Mobile(
     >
       <div className="flex items-center justify-between px-4 py-2">
         <Link to="/">
-          <TypebotLogoFull />
+          <NorobotLogoFull />
         </Link>
         <IconButton
           aria-label={isOpened ? "Close menu" : "Open menu"}
@@ -306,7 +306,7 @@ const Desktop = React.forwardRef<
             isScrolled ? "opacity-0 pointer-events-none" : "opacity-100",
           )}
         >
-          <TypebotBubble />
+          <NorobotBubble />
         </div>
       )}
     </div>

@@ -82,7 +82,7 @@ export const JoinTheCommunity = () => (
             conversational AI apps
           </h2>
           <p className="text-gray-11">
-            Join the Typebot community to connect with chatbot enthusiasts,
+            Join the Norobot community to connect with chatbot enthusiasts,
             share insights, and learn together to create advanced automations.
             Get exclusive resources, influence product development, and be part
             of a network that's shaping the future of conversational apps.

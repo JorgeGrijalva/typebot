@@ -12,5 +12,5 @@ export const discordUrl = "https://ai.thenoro.com/discord";
 export const docsUrl = "https://https://ai.thenoro.com/docs";
 export const howToGetHelpUrl = `${docsUrl}/guides/how-to-get-help`;
 export const stripeClimateUrl = ""; //https://climate.stripe.com/5VCRAq
-export const enterpriseLeadTypebotUrl =
+export const enterpriseLeadNorobotUrl =
   "https://ai.thenoro.com/enterprise-lead";

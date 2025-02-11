@@ -1,5 +1,5 @@
 import { ButtonLink } from "@/components/link";
-import { enterpriseLeadTypebotUrl } from "@/constants";
+import { enterpriseLeadNorobotUrl } from "@/constants";
 import {
   PerkListItem,
   PricingCardFooter,
@@ -31,7 +31,7 @@ export const EnterprisePlanCard = () => (
       <ButtonLink
         variant="ctaSecondary"
         size="lg"
-        href={enterpriseLeadTypebotUrl}
+        href={enterpriseLeadNorobotUrl}
       >
         Get a quote
       </ButtonLink>

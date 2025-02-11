@@ -19,7 +19,7 @@ const departments = [
     bulletPoints: [
       {
         main: "Lead scoring",
-        sub: "Typebot asks questions while automatically scoring and prioritizing new leads.",
+        sub: "Norobot asks questions while automatically scoring and prioritizing new leads.",
       },
       {
         main: "Insights",

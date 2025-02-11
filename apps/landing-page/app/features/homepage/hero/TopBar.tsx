@@ -1,4 +1,3 @@
-import { TypebotLogoFull } from "@/components/TypebotLogo";
 import { ButtonLink } from "@/components/link";
 import { signinUrl } from "@/constants";
 import { cn } from "@/lib/utils";

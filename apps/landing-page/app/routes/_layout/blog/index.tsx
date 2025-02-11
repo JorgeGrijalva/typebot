@@ -9,9 +9,9 @@ import { isDefined } from "@typebot.io/lib/utils";
 export const Route = createFileRoute("/_layout/blog/")({
   head: () => ({
     meta: createMetaTags({
-      title: "Typebot Blog",
+      title: "Norobot Blog",
       description:
-        "Learn more about Typebot, chatbots, conversational AI and more to help you hack the bot game and grow your business.",
+        "Learn more about Norobot, chatbots, conversational AI and more to help you hack the bot game and grow your business.",
       imagePath: "/images/default-og.png",
       path: "/blog",
     }),
@@ -25,7 +25,7 @@ function RouteComponent() {
       <div className="flex flex-col gap-6">
         <h1>Insights and resources on all things chatbot</h1>
         <p className="text-xl">
-          Learn more about Typebot, chatbots, conversational AI and more to help
+          Learn more about Norobot, chatbots, conversational AI and more to help
           you hack the bot game and grow your business.
         </p>
       </div>

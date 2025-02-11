@@ -1,4 +1,4 @@
-import { TypebotLogoFull } from "@/components/TypebotLogo";
+import { NorobotLogoFull } from "@/components/NorobotLogo";
 import { TextLink } from "@/components/link";
 import {
   blueskyUrl,
@@ -83,7 +83,7 @@ export const Footer = () => {
       <img src={gradientSeparatorSrc} alt="separator" className="w-full h-2" />
       <div className="flex flex-col max-w-7xl mx-auto px-6 md:px-4 w-full">
         <div className="flex flex-col md:flex-row gap-12 py-12 items-start">
-          <TypebotLogoFull className="mt-1" />
+          <NorobotLogoFull className="mt-1" />
           <div className="flex flex-col md:flex-row gap-8 md:justify-around w-full">
             {data.map((item) => (
               <div className="flex flex-col gap-3" key={item.title}>
@@ -109,7 +109,7 @@ export const Footer = () => {
           </div>
         </div>
         <p className="text-gray-11 text-sm">
-          All rights reserved 2025 - Typebot
+          All rights reserved 2025 - Norobot
         </p>
       </div>
     </footer>

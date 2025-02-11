@@ -33,7 +33,7 @@ export const Hero = () => (
         </span>
       </h1>
       <p className="text-center text-gray-400 font-normal text-gray-11 text-balance md:text-xl max-w-3xl hero-text-blur-in motion-delay-1500">
-        Typebot is a no-code platform that enables you to effortlessly create
+        Norobot is a no-code platform that enables you to effortlessly create
         and integrate advanced chatbots into websites and chat platforms like
         WhatsApp.
       </p>

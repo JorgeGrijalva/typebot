@@ -1,4 +1,4 @@
-import { Typebot } from "@/components/Typebot";
+import { Norobot } from "@/components/Norobot";
 import { Cta } from "@/components/cta/Cta";
 import { TextLink } from "@/components/link";
 import {
@@ -106,9 +106,9 @@ const components = {
       {highlight === "default" ? undefined : null}
     </Cta>
   ),
-  Typebot: (props: any) => (
+  Norobot: (props: any) => (
     <Suspense fallback={<div>Loading...</div>}>
-      <Typebot
+      <Norobot
         style={{
           borderRadius: "0.375rem",
           borderWidth: "1px",

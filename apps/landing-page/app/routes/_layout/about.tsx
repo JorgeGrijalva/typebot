@@ -1,5 +1,5 @@
 import { ContentPageWrapper } from "@/components/ContentPageWrapper";
-import { WhyTypebotCta } from "@/components/cta/WhyTypebotCta";
+import { WhyNorobotCta } from "@/components/cta/WhyNorobotCta";
 import { BuildingsGradientIcon } from "@/features/about/BuildingsGradientIcon";
 import { HeartGradientIcon } from "@/features/about/HeartGradientIcon";
 import { MessageSquareGradientIcon } from "@/features/about/MessageSquareGradientIcon";
@@ -10,9 +10,9 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/_layout/about")({
   head: () => ({
     meta: createMetaTags({
-      title: "About | Typebot",
+      title: "About | Norobot",
       description:
-        "Typebot empowers businesses to craft personalized, interactive experiences that foster deeper connections with users.",
+        "Norobot empowers businesses to craft personalized, interactive experiences that foster deeper connections with users.",
       imagePath: "/images/default-og.png",
       path: "/about",
     }),
@@ -27,7 +27,7 @@ function RouteComponent() {
         <h1>Nice conversations makes good relations</h1>
         <div className="flex flex-col gap-10 font-heading text-3xl md:text-justify">
           <p>
-            At Typebot, we believe that{" "}
+            At Norobot, we believe that{" "}
             <span className="group font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#c13eaa] to-[#ff491f] to-30%">
               <MessageSquareGradientIcon className="size-6 inline-flex group-hover:motion-preset-seesaw-lg" />{" "}
               great conversations
@@ -56,7 +56,7 @@ function RouteComponent() {
             voice of your brand.
           </p>
           <p>
-            Typebot{" "}
+            Norobot{" "}
             <span className="group font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#c13eaa] to-[#ff491f] to-70%">
               <BuildingsGradientIcon className="size-6 inline-flex group-hover:motion-preset-bounce" />{" "}
               empowers businesses
@@ -69,13 +69,13 @@ function RouteComponent() {
             and design.
           </p>
           <p className="font-bold">
-            That's why I created Typebot—to unlock the full potential of
+            That's why I created Norobot—to unlock the full potential of
             chatbots and make them intuitive, beautiful, and impactful.
           </p>
           <p>Let's bot!</p>
         </div>
       </div>
-      <WhyTypebotCta />
+      <WhyNorobotCta />
     </ContentPageWrapper>
   );
 }

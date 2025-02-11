@@ -1,7 +1,7 @@
 import { Button } from "@/components/Button";
 import { Progress } from "@/components/Progress";
 import { ButtonLink } from "@/components/link";
-import { enterpriseLeadTypebotUrl, registerUrl } from "@/constants";
+import { enterpriseLeadNorobotUrl, registerUrl } from "@/constants";
 import { cn } from "@/lib/utils";
 import { useInView } from "motion/react";
 import { useEffect, useRef, useState } from "react";
@@ -18,7 +18,7 @@ const useCases = [
     images: {
       builder: {
         src: marketingBuilderSrc,
-        alt: "An example of a marketing bot being built in Typebot",
+        alt: "An example of a marketing bot being built in Norobot",
       },
       bot: {
         src: marketingBotSrc,
@@ -31,7 +31,7 @@ const useCases = [
     images: {
       builder: {
         src: supportAndProductBuilderSrc,
-        alt: "An example of a support bot being built in Typebot",
+        alt: "An example of a support bot being built in Norobot",
       },
       bot: {
         src: supportAndProductBotSrc,
@@ -44,7 +44,7 @@ const useCases = [
     images: {
       builder: {
         src: salesBuilderSrc,
-        alt: "An example of a sales bot being built in Typebot",
+        alt: "An example of a sales bot being built in Norobot",
       },
       bot: {
         src: salesBotSrc,
@@ -208,7 +208,7 @@ export const Cta = () => (
       <ButtonLink
         variant="ctaSecondary"
         size="lg"
-        href={enterpriseLeadTypebotUrl}
+        href={enterpriseLeadNorobotUrl}
       >
         Book a demo
       </ButtonLink>

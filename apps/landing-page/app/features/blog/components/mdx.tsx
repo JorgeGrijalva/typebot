@@ -1,4 +1,4 @@
-import { Norobot } from "@/components/Norobot";
+import { Norobot } from "@/components/Typebot";
 import { Cta } from "@/components/cta/Cta";
 import { TextLink } from "@/components/link";
 import {

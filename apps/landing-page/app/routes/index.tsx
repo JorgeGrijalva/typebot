@@ -18,9 +18,9 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: createMetaTags({
-      title: "Typebot",
+      title: "Norobot",
       description:
-        "Typebot is a no-code platform that enables you to effortlessly create and integrate advanced chatbots into websites and chat platforms like WhatsApp.",
+        "Norobot is a no-code platform that enables you to effortlessly create and integrate advanced chatbots into websites and chat platforms like WhatsApp.",
       imagePath: "/images/default-og.png",
       path: "",
     }),

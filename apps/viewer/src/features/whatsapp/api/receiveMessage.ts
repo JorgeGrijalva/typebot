@@ -1,5 +1,6 @@
 import { publicProcedure } from "@/helpers/server/trpc";
 import * as Sentry from "@sentry/nextjs";
+import { parseUnknownError } from "@typebot.io/lib/parseUnknownError";
 import { WhatsAppError } from "@typebot.io/whatsapp/WhatsAppError";
 import { resumeWhatsAppFlow } from "@typebot.io/whatsapp/resumeWhatsAppFlow";
 import {
@@ -55,15 +56,14 @@ export const receiveMessage = publicProcedure
       });
     } catch (err) {
       if (err instanceof WhatsAppError) {
-        console.log("Known WhatsApp error:", err.message, err.details);
         Sentry.captureMessage(err.message, err.details);
       } else {
-        console.error("Unknown WhatsApp error:", err);
-        Sentry.captureException(err);
+        console.error("sending unkown error to Sentry");
+        Sentry.captureException(err, {
+          data: await parseUnknownError({ err }),
+        });
       }
     }
-
-    await Sentry.flush();
 
     return {
       message: "Message received",

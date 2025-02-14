@@ -1,7 +1,10 @@
+import * as Sentry from "@sentry/nextjs";
 import { TRPCError, initTRPC } from "@trpc/server";
+import { LogError } from "@typebot.io/logs/LogError";
 import type { OpenApiMeta } from "@typebot.io/trpc-openapi/types";
 import superjson from "superjson";
 import { ZodError } from "zod";
+import { fromError } from "zod-validation-error";
 import type { Context } from "./context";
 
 const t = initTRPC
@@ -14,8 +17,12 @@ const t = initTRPC
         ...shape,
         data: {
           ...shape.data,
+          logError:
+            error.cause instanceof LogError ? error.cause.toToast() : null,
           zodError:
-            error.cause instanceof ZodError ? error.cause.flatten() : null,
+            error.cause instanceof ZodError
+              ? fromError(error.cause).message
+              : null,
         },
       };
     },
@@ -25,6 +32,7 @@ const isAuthed = t.middleware(({ next, ctx }) => {
   if (!ctx.user?.id) {
     throw new TRPCError({
       code: "UNAUTHORIZED",
+      message: "You must be logged in to access this resource",
     });
   }
   return next({
@@ -34,11 +42,15 @@ const isAuthed = t.middleware(({ next, ctx }) => {
   });
 });
 
+const sentryMiddleware = t.middleware(Sentry.trpcMiddleware());
+
 export const middleware = t.middleware;
 
 export const router = t.router;
 export const mergeRouters = t.mergeRouters;
 
-export const publicProcedure = t.procedure;
+export const publicProcedure = t.procedure.use(sentryMiddleware);
 
-export const authenticatedProcedure = t.procedure.use(isAuthed);
+export const authenticatedProcedure = t.procedure
+  .use(sentryMiddleware)
+  .use(isAuthed);
